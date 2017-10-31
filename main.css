@@ -4,9 +4,9 @@ p {
 }
 
 h1 {
-  font-style: bold;
-  font-size: 70px;
-  font-color: white;
-  background-color: grey;
+  font-style: papyrus;
+  font-size: 60px;
+  color: #005A31;
+  background-color: #F3FAB6;
   text-align: center;
 }
