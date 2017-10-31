@@ -1,3 +1,9 @@
 p {
-  color: red;
+  color: black;
+  align: center;
+}
+
+h1 {
+  font-style: bold;
+  font-size: 30px;
 }
