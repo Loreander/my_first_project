@@ -4,10 +4,8 @@ p {
 }
 
 .grid {
-  background color: A4D555;
-  width: 200px;
-  height: 200px;
-  display: inline-grid;
+  background color: red;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
