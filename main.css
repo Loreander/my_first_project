@@ -3,7 +3,7 @@ p {
   text-align: center;
 }
 
-grid {
+.grid {
   display: grid;
   background color: A4D555;
   grid-template: repeat(4, 1fr);
