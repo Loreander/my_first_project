@@ -1,10 +1,12 @@
 p {
   color: black;
+  text-align: center;
 }
 
 h1 {
   font-style: bold;
   font-size: 70px;
-  font-color: blue;
+  font-color: white;
   background-color: grey;
+  text-align: center;
 }
