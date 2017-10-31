@@ -1,6 +1,6 @@
 p {
   color: black;
-  align: center;
+  text-align: center;
 }
 
 h1 {
@@ -8,4 +8,5 @@ h1 {
   font-size: 30px;
   font-color: blue;
   background-color: gray;
+  text-align: center;
 }
