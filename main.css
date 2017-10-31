@@ -5,7 +5,9 @@ p {
 
 grid {
   display: grid;
+  background color: A4D555;
   grid-template: repeat(4, 1fr);
+}
 
 h1 {
   font-style: papyrus;
