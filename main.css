@@ -6,11 +6,16 @@ p {
 .grid {
   background-color: #F3FAB6;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Raleway";
 }
+
+.a {}
+.b {}
+.c {}
+.d {}
 
 h1 {
   font-style: papyrus;
