@@ -3,6 +3,10 @@ p {
   text-align: center;
 }
 
+grid {
+  display: grid;
+  grid-template: repeat(4, 1fr);
+
 h1 {
   font-style: papyrus;
   font-size: 60px;
