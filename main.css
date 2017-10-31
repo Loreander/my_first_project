@@ -4,9 +4,10 @@ p {
 }
 
 .grid {
-  background color: red;
+  background-color: red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
 }
 
 h1 {
