@@ -19,7 +19,7 @@ p {
 .grid2 {
   display: grid;
   grid-template-rows: repeat(4,200px);
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-aligh: left;
 }
 
@@ -68,20 +68,20 @@ h3 {
 
 .f {
   grid-row: 1;
-  grid-column: 1:
+  grid-column: 1 / span 3;
 }
 
 g{
     grid-row: 2;
-  grid-column: 1:
+  grid-column: 2 / span 3;
 }
 
 h{
   grid-row: 3;
-  grid-column: 1:
+  grid-column: 1 / span 3;
 }
 
 i{
   grid-row: 4;
-  grid-column: 1:
+  grid-column: 2 / span 3;
 }
