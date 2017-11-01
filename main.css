@@ -9,7 +9,7 @@ p {
 .grid {
   background-color: #F3FAB6;
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
   text-align: center;
   font-size: 30px;
   font-family: "Raleway";
