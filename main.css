@@ -16,6 +16,12 @@ p {
   font-family: "Raleway";
 }
 
+.grid2 {
+  display: grid;
+  gir-template-rows: repeat(4,200px);
+  text-aligh: left;
+}
+
 .a {
   grid-column: 3 / span 2;
 }
