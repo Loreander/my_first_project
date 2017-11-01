@@ -85,3 +85,9 @@ h3 {
   grid-row: 4;
   grid-column: 2 / span 3;
 }
+
+.myimages {
+  height: 400px;
+  width: 400px;
+  padding-left: 400px;
+}
