@@ -71,17 +71,17 @@ h3 {
   grid-column: 1 / span 3;
 }
 
-g{
-    grid-row: 2;
+.g{
+  grid-row: 2;
   grid-column: 2 / span 3;
 }
 
-h{
+.h{
   grid-row: 3;
   grid-column: 1 / span 3;
 }
 
-i{
+.i{
   grid-row: 4;
   grid-column: 2 / span 3;
 }
