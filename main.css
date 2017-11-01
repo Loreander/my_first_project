@@ -57,11 +57,6 @@ h1 {
   border: 0px;
 }
 
-.prezi {
-margin-left: 400px;
-align: center;
-}
-
 h3 {
   font-size: 30px;
 }
@@ -89,7 +84,6 @@ h3 {
 .myimages {
   height: 400px;
   width: 400px;
-  padding-left: 400px;
 }
 
 .j {
