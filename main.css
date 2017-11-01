@@ -51,7 +51,8 @@ h1 {
 }
 
 prezi {
-display: inline;
+display: block;
+align: center;
 }
 
 h3 {
