@@ -16,7 +16,10 @@ p {
   font-family: "Raleway";
 }
 
-.a {}
+.a {
+  grid-row-start: 1 / span 2;
+}
+
 .b {}
 .c {}
 .d {}
