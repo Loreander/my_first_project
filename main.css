@@ -17,23 +17,23 @@ p {
 }
 
 .a {
-  grid-row: 3 / span 2;
+  grid-column: 3 / span 2;
 }
 
 .b {
-  grid-row: 5 / span 2;
+  grid-column: 5 / span 2;
 }
 
 .c {
-  grid row: 1 / span 3;
+  grid-column: 1 / span 3;
 }
 
 .d {
-  grid row: 4 / span 3;
+  grid-column: 4 / span 3;
 }
 
 .e {
-  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
 }
 
 h1 {
