@@ -24,23 +24,23 @@ p {
 }
 
 .a {
-  grid-column: 2 / span 1;
+  grid-column: 2;
 }
 
 .b {
-  grid-column: 5 / span 1;
+  grid-column: 5;
 }
 
 .c {
-  grid-column: 3 / span 1;
+  grid-column: 3;
 }
 
 .d {
-  grid-column: 4 / span 1;
+  grid-column: 4;
 }
 
 .e {
-  grid-column: 1 / span 1;
+  grid-column: 1;
 }
 
 h1 {
