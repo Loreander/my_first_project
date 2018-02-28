@@ -20,7 +20,7 @@ p {
   display: grid;
   grid-template-rows: repeat(4,200px);
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-aligh: left;
+  text-align: left;
 }
 
 .a {
