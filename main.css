@@ -6,6 +6,12 @@ p {
   font-family: "Trebuchet MS";
 }
 
+.class{
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .grid {
   background-color: #F3FAB6;
   display: grid;
