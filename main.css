@@ -75,17 +75,25 @@ h3 {
   grid-column: 1 / span 3;
 }
 
-.g{
+.g {
   grid-row: 2;
   grid-column: 2 / span 3;
 }
 
-.h{
+.h {
   grid-row: 3;
   grid-column: 1 / span 3;
 }
 
-.i{
+.uvmLogo {
+  grid-row: 3;
+  grid-column: 0;
+  height: 200px;
+  width: 200px;
+  align: center;
+}
+
+.i {
   grid-row: 4;
   grid-column: 2 / span 3;
 }
