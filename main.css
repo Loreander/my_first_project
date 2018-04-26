@@ -1,7 +1,7 @@
 p {
   color: white;
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   text-algn: left;
   font-family: "Trebuchet MS";
 }
@@ -87,8 +87,8 @@ h3 {
 }
 
 .myimages {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .j {
