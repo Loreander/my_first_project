@@ -87,9 +87,9 @@ h3 {
 
 .uvmLogo {
   grid-row: 3;
-  grid-column: 0;
-  height: 100px;
-  width: 100px;
+  grid-column: 4;
+  height: 50px;
+  width: 50px;
   align: center;
 }
 
