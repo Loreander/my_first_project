@@ -36,9 +36,10 @@ body {
   font-size: 30px;
   color: white;
   font-family: "Raleway";
-  border-bottom-color: #283747;
-  border-bottom-width: 15px;
-  border-bottom: solid;
+  border-bottom-color: black;
+  border-bottom-width: 10px;
+  border-bottom: double;
+  padding-bottom; 20px;
 }
 
 .grid2 {
