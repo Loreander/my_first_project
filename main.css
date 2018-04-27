@@ -7,6 +7,19 @@ p {
   background-color: #1A5276;
 }
 
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: pink;
+}
+
+}
 body {
   background-color: #1A5276;
 }
@@ -25,6 +38,7 @@ body {
   color: white;
   font-family: "Raleway";
   border-bottom-color: #283747;
+  border-bottom-width: 15px;
 }
 
 .grid2 {
@@ -57,8 +71,8 @@ body {
 h1 {
   font-style: papyrus;
   font-size: 50px;
-  color: #005A31;
-  background-color: #F3FAB6;
+  color: white;
+  background-color: #1A5276;
   text-align: left;
   margin-top: 0px;
   margin-left: 0px;
