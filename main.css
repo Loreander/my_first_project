@@ -33,7 +33,7 @@ body {
   width: 30%;
 }
 
-nav {
+.grid {
   background-color: #1A5276;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
