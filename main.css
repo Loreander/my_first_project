@@ -20,11 +20,11 @@ a:hover {
   background-color: white;
   border-radius: 10%;
   border-width: 20px; 
-
 }
 
 body {
   background-color: #1A5276;
+  margin: 0px;
 }
 .center {
   display: block;
@@ -32,7 +32,8 @@ body {
   margin-right: auto;
   width: 30%;
 }
-.grid {
+
+nav {
   background-color: #1A5276;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
