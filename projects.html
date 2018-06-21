@@ -3,25 +3,44 @@
 
 <!-- This is where the websites Metadata is kept, and the location of the title -->
 
-  <head>
-    <title>Projects</title>
-     <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script rel="javascript" type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
 
-<!-- This is where I will keep the main content of my About Me Page -->
-  <body>
+<!-- This is where I will keep the main content of my Projects page -->
+
+<body>
   <header>
     <h1>Projects</h1>
   </header>
 
-     <div class="grid">
-      <div class="box a"><a href="index.html">Home</a></div>
-      <div class="box b"><a href="projects.html">Projects</a></div>
-      <div class="box c"><a href="education.html">Education</a></div>
-      <div class="box d"><a href="work.html">Work</a></div>
-      <div class="box e"><a href="goals.html">Aspirations</a></div>
-     </div>
+  <nav>
+    <div class="box a"><a href="index.html">Home</a></div>
+    <div class="box b"><a href="projects.html">Projects</a></div>
+    <div class="box c"><a href="education.html">Education</a></div>
+    <div class="box d"><a href="work.html">Work</a></div>
+    <div class="box e"><a href="goals.html">Aspirations</a></div>
+  </nav>
 
-  </body>
+  <div class="projectsGrid">
+    <h2 class="project-title">Markdown Preview</h2>
+    <p class="project-description" id="markdownDescription">The Markdown Preview web app simply converts a user string into markdown text. Markdown text is a shorthand way of defining certain html contents. If the user types in '# testing', it will display 'testing' using the h1 stylings</p>
+    <a href=markdown.html><img id="markdownScreenshot" src="images/MarkdownScreenshot.JPG" title="Markdown Preview" href="markdown.html"></a>
+  </div>
+
+  <hr>
+
+  <h2 class="project-title">Guess a Number A.I</h2>
+  <hr>
+  <h2 class="project-title">Guess a Number Player</h2>
+  <hr>
+
+  <footer>
+    
+  </footer>
+</body>
 
 </html>

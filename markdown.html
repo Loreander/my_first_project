@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<!-- This is where the websites Metadata is kept, and the location of the title -->
+
+<head>
+  <title>Markdown Previewer</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script rel="javascript" type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="projectsGrid">
+        <h1 class="project-title">Markdown Preview</h1>
+        <textarea id="source" class="sourceText"></textarea>
+        <button id="render" onclick="onClickPreview()">Render</button>
+        <div id="preview"></div>
+    </div>
+</body>
+</html>
