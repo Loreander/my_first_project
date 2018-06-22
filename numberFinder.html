@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Finder</title>
+        <script> let module = {};</script>
+        <script type="text/javascript" src="numberFind-core.js"></script>
+    </head>
+
+
+    <body>
+        <h1>Guess My Number!</h1>
+        <p>I'm thining of a number between 1 and 100, can you guess what it is?</p>
+        <textarea id="source"></textarea>
+        <pre id="output"></pre>
+
+        <script>
+            function onEnterExecute(){
+                let sourceText = document.getElementById("source").value
+                let preview = document.getElementById("output")
+                preview.innerHTML = marked(sourceText)
+            }</script>
+    </body>
+</html>
