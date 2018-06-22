@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="guess-core.js"></script>
+        <script>
+            module = {}
+        </script>
+        <link rel="stylesheet" type="text/css" href="guess.css">
+    </head>
+    <body>
+
+        <div class="guessGrid">
+        <h1> Guess a Number </h1>
+            <button id="a" onclick="handleInput('h')">Higher</button>
+            <button id="b" onclick="handleInput('l')">Lower</button>
+            <button id="c" onclick="handleInput('y')">Correct!</button>
+            <button id="d" onclick="restart()">Restart</button>
+            <pre id="output"></pre>
+        </div>
+
+        <script>
+            function say(message) {
+                document.getElementById('output').textContent += '\n' + message;
+            }  
+
+            function exit() {
+                document.getElementById('output').textContent = "Hooray, we arrived at your number!"
+            }
+
+            function clear() {
+                document.getElementById('output').textContent = '';
+            }
+
+            function restart() {
+                clear();
+                gameStart();
+            }
+            
+            gameStart(); 
+
+        </script>
+    </body>
+</html>

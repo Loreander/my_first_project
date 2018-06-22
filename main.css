@@ -46,7 +46,7 @@ body {
 nav{
   background-color: #1A5276;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 20px;
   text-align: center;
   font-size: 25px;
@@ -104,6 +104,14 @@ nav{
   font-size: 22px;
   box-shadow: 2px; 
 }
+
+.z {
+  grid-column: 5;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
 .grid2 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -156,6 +164,11 @@ h3 {
 .j {
   grid-row: 4;
   grid-column: 1;
+}
+
+.k {
+  grid-row: 3;
+  grid-column: 3;
 }
 
 .myimages {
@@ -230,7 +243,6 @@ textarea{
 
 .project-description{
 
-  
 }
 
 #markdownDescription{
@@ -244,4 +256,16 @@ textarea{
   height: 100%;
   width: 100%;
   margin: auto;
+}
+
+footer{
+  background-color: rgb(105, 105, 105);
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+  color: rgb(253, 139, 8);
 }
