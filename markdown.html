@@ -5,16 +5,68 @@
 
 <head>
   <title>Markdown Previewer</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script rel="javascript" type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="markdown.css">
+  <script rel="javascript" type="text/javascript" src="markdown.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
-    <div class="projectsGrid">
+    <div class="markdownGrid">
         <h1 class="project-title">Markdown Preview</h1>
-        <textarea id="source" class="sourceText"></textarea>
-        <button id="render" onclick="onClickPreview()">Render</button>
+        <div id="description">
+            <p id="description">Use the following markdown shortcuts to   modify your source text. You will see the rendered text on the right!</p>
+            <br>
+            <table>
+                <tr>
+                    <th>MarkDown</th>
+                    <th>Effect</th>
+                    <th>MarkDown</th>
+                    <th>Effect</th>
+                    <th>MarkDown</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <td><strong>#</strong></td>
+                    <td>&lt;h1&gt;</td>
+                    <td><strong>1.</strong></td>
+                    <td>Ordered List</td>
+                    <td><strong>[link text](url)</strong></td>
+                    <td>Creates a link</td>
+                </tr>
+                <tr>
+                    <td><strong></strong>##</strong></td>
+                    <td>&lt;h2&gt;</td>
+                    <td><strong></strong>2.</strong></td>
+                    <td>Ordered List</td>
+                    <td><strong>![alt text](img src)</strong></td>
+                    <td>Adds an Image</td>
+                </tr>
+                <tr>
+                    <td><strong></strong>###</strong></td>
+                    <td>&lt;h2&gt;</td>
+                    <td><strong></strong>*</strong></td>
+                    <td>Un-ordered List</td>
+                    <td><strong>&gt;</strong></td>
+                    <td>Block Quote</td>
+                </tr>
+            </table>
+        </div>
+        <textarea id="source" class="sourceText">
+# Markdown is so cool because it is...
+1. Easy to use
+2. Versatile
+3. Intuitive
+                
+## You can do a lot of fun things like...
+* Ordered Lists
+* Unordered Lists
+* Even create [links](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+                
+> If you are really creative you can also add images!
+
+![parrot logo](images/parrot.png)
+        </textarea>
+        <button onclick="onClickPreview()">Render</button>
         <div id="preview"></div>
     </div>
 </body>

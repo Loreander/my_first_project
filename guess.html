@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="guess-core.js"></script>
+        <script src="guessCore.js"></script>
         <script>
             module = {}
         </script>
@@ -10,7 +10,7 @@
     <body>
 
         <div class="guessGrid">
-        <h1> Guess a Number </h1>
+        <h1> Pick a Number </h1>
             <button id="a" onclick="handleInput('h')">Higher</button>
             <button id="b" onclick="handleInput('l')">Lower</button>
             <button id="c" onclick="handleInput('y')">Correct!</button>
@@ -24,7 +24,7 @@
             }  
 
             function exit() {
-                document.getElementById('output').textContent = "Hooray, we arrived at your number!"
+                document.getElementById('output').textContent = "\nHooray, we arrived at \nyour number!"
             }
 
             function clear() {
@@ -37,7 +37,7 @@
             }
             
             gameStart(); 
-
         </script>
+
     </body>
 </html>

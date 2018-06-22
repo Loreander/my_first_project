@@ -3,5 +3,3 @@ function onClickPreview(){
     let preview = document.getElementById("preview")
     preview.innerHTML = marked(sourceText)
 }
-
-

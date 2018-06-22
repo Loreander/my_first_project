@@ -1,15 +1,22 @@
 
-html {
-    background-image: url("/images/questionMark.jpg");
+body {
+    background-image: url("./images/questionMark.jpg");
+    background-size: stretch;
+}
+
+output{
+    color: white;
+    font-size: 30px;
 }
 
 button {
     font-size: 30px;
-    border: 20px;
     border-radius: 10%;
-    border-color: green;
     display: flex;
     grid-row: 3;
+    color: green;
+    margin: auto;
+    border: single;
 }
 
 #a {
@@ -29,20 +36,29 @@ grid-column: 4;
 }
 
 .guessGrid{
+    margin-top: 80px;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 8fr;
-    grid-template-rows: 80px 100px 60px;
-    
+    grid-template-rows: 50px 280px 40px;
 }
+
 h1 {
     grid-column: 1 / span 4;
     grid-row: 1;
+    color: white;
+    margin: auto;
+    font-size: 60px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
 }
 
 pre {
     grid-row: 2;
     grid-column: 1 / span 4;
     display: flex;
+    color: white;
+    font-size: 40px;
 }
 
 

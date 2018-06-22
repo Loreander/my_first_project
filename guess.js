@@ -7,6 +7,7 @@ global.getUserResponse=function(){
     guessCore.handleInput(chunk);
 });
 }
+
 global.say=function(input){
     console.log(input);
 }
@@ -16,6 +17,10 @@ global.exit=function(){
 }
 
 guessCore.gameStart()
+
+global.clear=function(){
+    console.log('')
+}
 
 
 

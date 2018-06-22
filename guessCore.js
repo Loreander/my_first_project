@@ -8,7 +8,7 @@ let computerhigh;
 function gameStart(){
     computerlow = 1
     computerhigh = 100 
-    say("The game has begun!\nThink of a number between 0-100")
+    say("The game has begun! Think of \na number between 1-100")
     computerGuess()
 }
 
@@ -23,6 +23,7 @@ function computerGuess(){
 }
 
 function handleInput(input) {
+    clear()
     userresponse = input.toString().trim();
     verifyUserResponse();
 }
@@ -30,18 +31,18 @@ function handleInput(input) {
 function verifyUserResponse(){
     if (userresponse === "h") {
     computerlow = computerguess + 1
-    say ("higher...")
+    say("higher, hmm...")
     computerGuess()
     }
 
     if (userresponse === "l") {
     computerhigh = computerguess - 1
-    say ("lower...")
+    say("lower, hmm...")
     computerGuess()
     }
 
     if (userresponse === "y") {
-    say ("YOU WIN!!!")
+    say("Hooray i've guess it!!!")
     exit()
     }
 }
