@@ -15,8 +15,15 @@ body {
 }
 
 .logos {
-    width: 2em;
-    length: 2em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.linktext{
+    display: inline;
+    color: grey;
+    font-size: 1em;
+    position: relative;
 }
 
 #intuit {
@@ -25,10 +32,10 @@ body {
 }
 
 table {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 textarea {
     display: block;
@@ -41,6 +48,7 @@ textarea {
 
 td {
     vertical-align: center;
+    height: 100%;
 }
 
 .prompts{
