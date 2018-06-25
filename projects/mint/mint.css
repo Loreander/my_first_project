@@ -1,0 +1,79 @@
+html {
+    background-color: rgb(233, 233, 233);
+}
+.whiteBox {
+    background-color: white;
+    margin: auto;
+    width: 30%;
+}
+
+body {
+    text-align: center;
+    margin: auto 0;
+    font-family: Lato;
+    color: rgb(59, 59, 59);
+}
+
+.logos {
+    width: 2em;
+    length: 2em;
+}
+
+#intuit {
+    width: 15%;
+    height: 10%;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+
+td {
+    vertical-align: center;
+}
+
+.prompts{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#lilMessage{
+    width: 80%;
+    margin: auto;
+    
+}
+#rememberMe {
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#lockImage{
+    width: 1.5em;
+    height: 1.5em;
+}
+a {
+    text-decoration: none;
+}
+
+#submitButton{
+    background-color: rgb(67, 67, 224);
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    height: 4em;
+
+}
