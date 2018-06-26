@@ -4,7 +4,10 @@ html {
 .whiteBox {
     background-color: white;
     margin: auto;
-    width: 30%;
+    width: 25%;
+    border:solid rgb(177, 177, 177);
+    border-radius:2px;
+    border-width:1px;
 }
 
 body {
@@ -14,6 +17,27 @@ body {
     color: rgb(59, 59, 59);
 }
 
+.zeroSpace{
+    padding: 0px;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .7em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.greyFooter{
+    background-color:rgb(233, 233, 233);
+    padding-bottom: 6px;
+    font-size: .65em;
+    padding-top: 6px;
+    color: rgb(117, 117, 117);
+}
 .logos {
     width: 1.5em;
     height: 1.5em;
@@ -22,27 +46,54 @@ body {
 .linktext{
     display: inline;
     color: grey;
-    font-size: 1em;
+    font-size: 1.5em;
     position: relative;
+    padding-right:3px;
+    bottom:.2em;
+}
+
+.agreementsClause{
+    font-size: .9em;
+    color: rgb(185, 185, 185);
+    font-style: italic;
+    padding: 0px;
+    margin-bottom: 5px;
 }
 
 #intuit {
-    width: 15%;
-    height: 10%;
+    width: 11%;
+    height: 6%;
+}
+
+#rememberMe{
+	-webkit-appearance: none;
+	background-color: white;
+    border: 1px solid #cacece;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
+.inputBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1.6em;
+}
 
 textarea {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 85%;
     border: 1px solid rgb(211, 211, 211);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
@@ -53,18 +104,16 @@ td {
 
 .prompts{
     text-align: left;
-    margin-left: 20px;
+    margin-left: 1.6em;
+    margin-bottom: 10px;
 }
 
 #lilMessage{
     width: 80%;
-    margin: auto;
+    margin:auto;
+    padding-top:5px;
+    margin: top;
     
-}
-#rememberMe {
-    color: black;
-    text-align: left;
-    margin-left: 20px;
 }
 
 #lockImage{
@@ -75,13 +124,34 @@ a {
     text-decoration: none;
 }
 
+.bottomLinks{
+    padding-bottom: 0em;
+}
+
 #submitButton{
-    background-color: rgb(67, 67, 224);
+    background-color: rgb(69, 69, 218);
     display: block;
     margin: auto;
-    width: 90%;
+    width: 85%;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;
-    height: 4em;
+    height: 3em;
+    color:white;
+    font-size:1em;
+}
 
+h3{
+    font-size:1.5em;
+    font-weight:normal;
+    margin:0;
+}
+
+hr{
+    -webkit-appearance: none;
+    width:80%;
+    height: 0px;
+    padding: 0px;
+    background-color:rgb(230, 230, 230);
+    color:rgb(230, 230, 230);
+    border-color:rgb(230, 230, 230);
 }

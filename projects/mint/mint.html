@@ -15,15 +15,18 @@
 
     <table>
         <tr>
-            <td><a href="https://www.mint.com"><img class="logos" src="mint.png"><div class="linktext">mint</div></a></td>
-            <td><a class="linklogo" href="https://quickbooks.intuit.com"><img class="logos" src="quickbooks.png"><div class="linktext">quickbooks</div></a></td>
-            <td><a class="linklogo" href="https://turbotax.intuit.com"><img class="logos" src="turbotax.png"><div class="linktext">turbotax</div></a></td>
+            <td><a href="https://www.mint.com"><img class="logos" src="mint.png"><div class="linktext">  mint  </div></a></td>
+            <td><a class="linklogo" href="https://quickbooks.intuit.com"><img class="logos" src="quickbooks.png"><div class="linktext">  quickbooks  </div></a></td>
+            <td><a class="linklogo" href="https://turbotax.intuit.com"><img class="logos" src="turbotax.png"><div class="linktext">  turbotax  </div></a></td>
         </tr>
     </table>
 
     <div class="whiteBox">
-        <p>One Account.</p>
-        <p>Everything Intuit.</p>
+        <br>
+        <h3>One Account.</h3>
+        <h3>Everything Intuit.</h3>
+        <br>
+        
 
         <p id="lilMessage">Sign in to your intuit account to access all of our products including Mint.  <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a></p>
 
@@ -33,14 +36,17 @@
         <p class="prompts">Password</p>
         <textarea></textarea>
         <br>
-        <input type="checkbox" id="rememberMe" label="Remember Me">Remember Me</input>
+        <div class="inputBox">
+            <input type="checkbox" id="rememberMe" label="Remember Me"></input>
+            <p>Remember Me</p>
+        </div>
         <br>
-        <br>
-        <button id="submitButton"><img id="lockImage" src="lock.png">Sign In</button>
-        <br>
-        <p>By clicking Sign In, you agree to our</p>
-        <p><a href="https://www.mint.com/terms">License Agreement</a> and have read and acknowledge</p>
-        <p>our <a href="https://security.intuit.com/privacy">Privacy Statement</a></p>
+        <button id="submitButton"><img id="lockImage" src="lock.png">  Sign In</button>
+        <div class="agreementsClause">
+            <p class="zeroSpace">By clicking Sign In, you agree to our</p>
+            <p class="zeroSpace"><a href="https://www.mint.com/terms">License Agreement</a> and have read and acknowledge</p>
+            <p class="zeroSpace">our <a href="https://security.intuit.com/privacy">Privacy Statement</a></p>
+        </div>
         <hr>
         <p><a href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dnav_login_dropdown">I forgot my user ID or password</a></p>
         <p>New to Intuit?  <a href="https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dnav_login_dropdown">Create an account</a>.</p>
@@ -51,16 +57,16 @@
     </div>
 
     <footer>
-        <p>Mint bill pay services provided by Intuit Payments Inc. under applicable <a href="https://www.intuit.com/legal/outbound-licenses/">licenses</a>.</p>
-        <table>
+        <p class="zeroSpace">Mint bill pay services provided by Intuit Payments Inc. under applicable <a href="https://www.intuit.com/legal/outbound-licenses/">licenses</a>.</p>
+        <table class="bottomLinks">
                 <tr>
                     <td><a href="http://about.intuit.com/legal/">Legal</a></td>
                     <td><a href="https://security.intuit.com/privacy/">Privacy</a></td>
                     <td><a href="http://security.intuit.com/">Security</a></td>
                 </tr>
             </table>
-        <p>© 2018 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
-        <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+        <p class="zeroSpace">© 2018 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+        <p class="zeroSpace">Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
     </footer>
 </body>
 </html>
