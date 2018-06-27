@@ -4,20 +4,43 @@
         <title>Number Finder</title>
         <script> let module = {};</script>
         <script type="text/javascript" src="numberFind-core.js"></script>
+        <link type="text/css" rel="stylesheet" href="numberFinder.css">
     </head>
 
 
     <body>
-        <h1>Guess My Number!</h1>
-        <p>I'm thining of a number between 1 and 100, can you guess what it is?</p>
-        <textarea id="source"></textarea>
-        <pre id="output"></pre>
+        <div class="center">
+            <h1>Guess My Number!</h1>
+            <p class="center">I'm thinking of a number between 1 and 100, can you guess what it is?</p>
+            <br>
+            <textarea id="input"></textarea>
+            <button onclick="userInput()" class="center">Guess</button>
+            <br>
+            <pre id="output"></pre>
+            <button onclick="newGame()" class="center">Restart</button>
+            <p class="center" id="newGameText"></p>
+        </div>
 
         <script>
-            function onEnterExecute(){
-                let sourceText = document.getElementById("source").value
+            computerNumber = Math.floor(Math.random() * 99 + 1)
+
+            function display(message) {
+                document.getElementById("output").textContent += '\n' + message;
+            }  
+
+            function userInput(){
+                let input = document.getElementById("input").textContent;
+                document.getElementById("input").textContent=''
                 let preview = document.getElementById("output")
-                preview.innerHTML = marked(sourceText)
-            }</script>
+                handleInput(input);
+            }
+
+            function newGame(){
+                document.getElementById("output").textContent = ""
+                computerNumber = Math.floor(Math.random() * 99 + 1)
+                document.getElementById("newGameText").textContent="I have a new number for you to guess!"
+            }
+
+            </script>
     </body>
 </html>

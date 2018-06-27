@@ -16,4 +16,10 @@ global.exit = function(){
     process.exit()
 }
 
-numberFindCore.gameStart();
+global.usingJava = true;
+function javaIntro() {
+    display("I've thought of a number between 1-100\nGo!!!");
+    numberFindCore.gameStart()
+}
+
+javaIntro();

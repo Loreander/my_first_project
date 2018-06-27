@@ -5,8 +5,12 @@ let computerNumber
 let guessCounter = 0
 
 function gameStart() {
-    display("I've thought of a number between 1-100\nGo!!!");
     computerCreate();
+}
+
+function computerCreate() {
+    computerNumber = Math.floor(Math.random() * 99 + 1)
+    userInput()
 }
 
 function handleInput(item) {
@@ -15,29 +19,30 @@ function handleInput(item) {
     analyzeGuess();
 }
 
-function computerCreate() {  
-    computerNumber = Math.floor(Math.random() * 99 + 1)
-    userInput()
-}
-
 function analyzeGuess() {
     if (userGuess == computerNumber){
-        display("YaY! it took you " + guessCounter + " guesses!" )
-        exit()
+        display("You guessed it! It took you " + guessCounter + " guesses!" )
+        if(usingJava == true){
+            exit()
+        }
     }
- 
+
     if (userGuess < computerNumber) {
-        display("Nope, guess higher!")
-        userInput()
+        display("It is higher than " + userGuess)
+        if(usingJava == true){
+            userInput()
+        }
     }
-    
+
     if (userGuess > computerNumber) {
-        display("Nope, guess lower!")
-        userInput()
+        display("It is lower than " + userGuess)
+        if(usingJava == true){
+            userInput()
+        }
     }
  }
 
  module.exports = {
     handleInput: handleInput,
-    gameStart: gameStart
+    gameStart: gameStart,
  }

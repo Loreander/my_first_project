@@ -1,0 +1,29 @@
+#input {
+    display: block;
+    background-color: rgb(243, 223, 186);
+    width: 10%;
+    margin: auto;
+}
+
+h1 {
+    
+}
+#output {
+    box-sizing: content-box;
+    border: 1px solid;
+    overflow: auto;
+    width: 45%;
+    margin: auto;
+    background-color:rgb(243, 223, 186);
+    height: 200px;
+}
+
+body {
+    background-color: rgb(255, 209, 81);
+}
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}

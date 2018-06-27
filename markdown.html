@@ -34,7 +34,7 @@
                     <td>Creates a link</td>
                 </tr>
                 <tr>
-                    <td><strong></strong>##</strong></td>
+                    <td><strong>##</strong></td>
                     <td>&lt;h2&gt;</td>
                     <td><strong></strong>2.</strong></td>
                     <td>Ordered List</td>
@@ -51,7 +51,7 @@
                 </tr>
             </table>
         </div>
-        <textarea id="source" class="sourceText">
+        <textarea id="source" class="sourceText" onkeyup="onClickPreview()">
 # Markdown is so cool because it is...
 1. Easy to use
 2. Versatile
@@ -66,8 +66,23 @@
 
 ![parrot logo](images/parrot.png)
         </textarea>
-        <button onclick="onClickPreview()">Render</button>
-        <div id="preview"></div>
+        <div id="preview"><h1 id="markdown-is-so-cool-because-it-is-">Markdown is so cool because it is...</h1>
+            <ol>
+            <li>Easy to use</li>
+            <li>Versatile</li>
+            <li>Intuitive</li>
+            </ol>
+            <h2 id="you-can-do-a-lot-of-fun-things-like-">You can do a lot of fun things like...</h2>
+            <ul>
+            <li>Ordered Lists</li>
+            <li>Unordered Lists</li>
+            <li>Even create <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">links</a></li>
+            </ul>
+            <blockquote>
+            <p>If you are really creative you can also add images!</p>
+            </blockquote>
+            <p><img alt="parrot logo" src="images/parrot.png"> </p>
+        </div>
     </div>
 </body>
 </html>
