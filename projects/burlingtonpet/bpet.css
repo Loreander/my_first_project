@@ -1,0 +1,92 @@
+#flex-float-right {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 20px;
+}
+
+p {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    padding: 0px;
+    background-color: white;
+    border-bottom: 5px black solid;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 70px;
+    margin: 0;
+    padding-top: 28px;
+}
+
+#mainLogo{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.navimg {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(13, 141, 13);
+    height: 60px;
+    align-items: center;
+}
+
+navLinks{
+    color: white;
+    border: 1px solid greenyellow;
+    margin: 0;
+}
+
+navLinks p{
+    color: white;
+}
+
+.caratDown {
+    width: 20px;
+    height: 20px;
+}
+
+input{
+    height: 2em;
+}
+
+tr {
+    height: 2em;
+}
+
+table {
+    margin-left: 200px;
+}
+
+td {
+    display: list-item;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+}

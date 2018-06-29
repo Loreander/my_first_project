@@ -14,14 +14,15 @@
             <p class="center">I'm thinking of a number between 1 and 100, can you guess what it is?</p>
             <br>
             <textarea id="input"></textarea>
-            <button onclick="userInput()" class="center">Guess</button>
+            <button id="button" onclick="userInput()" class="center">Guess</button>
             <br>
             <pre id="output"></pre>
-            <button onclick="newGame()" class="center">Restart</button>
+            <button id="button" onclick="newGame()" class="center">Restart</button>
             <p class="center" id="newGameText"></p>
         </div>
 
         <script>
+            
             computerNumber = Math.floor(Math.random() * 99 + 1)
 
             function display(message) {
@@ -31,14 +32,15 @@
             function userInput(){
                 let input = document.getElementById("input").textContent;
                 document.getElementById("input").textContent=''
-                let preview = document.getElementById("output")
                 handleInput(input);
             }
 
             function newGame(){
                 document.getElementById("output").textContent = ""
+                guessCounter = 0;
                 computerNumber = Math.floor(Math.random() * 99 + 1)
                 document.getElementById("newGameText").textContent="I have a new number for you to guess!"
+                setTimeout(function(){document.getElementById("newGameText").textContent=''}, 2000)
             }
 
             </script>

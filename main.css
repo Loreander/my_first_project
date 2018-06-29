@@ -17,6 +17,7 @@ p {
 
 a:link {
   color: white;
+  text-decoration: none;
 }
 
 .bodyLinks {
@@ -35,12 +36,20 @@ body {
   background-color: lightgray;
   margin: 0px;
 }
+
+.homeLogos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   border-radius: 20%;
+  text-align: center;
 }
 
 .educationImages{
@@ -48,21 +57,20 @@ body {
   width: 15em;
   margin: auto;
 }
+
 nav{
   background-color: #1A5276;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 20px;
   text-align: center;
   font-size: 25px;
   color: white;
   font-family: "Raleway";
-  border-bottom-color: black;
-  border-bottom-width: 15px;
-  border-bottom: double;
   padding-bottom: 20px;
   padding-top: 10px;
   margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .indexNav {
@@ -83,6 +91,9 @@ nav{
   box-shadow: 2px;
 }
 
+.floatLeft{
+  float: left;
+}
 .educationNav {
   grid-column: 3;
 }
@@ -101,8 +112,8 @@ nav{
   box-shadow: 2px;
 }
 
-.goalsNav {
-  grid-column: 5;
+.aboutNav {
+  grid-column: 1;
 }
 
 .e:hover{
@@ -135,13 +146,17 @@ h1 {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 5px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+#homeLink{
+  color: rgb(253, 139, 8);
+}
+
 h2 {
-  font-size: 50px;
+  font-size: 35px;
 }
 
 h3 {
@@ -150,6 +165,10 @@ h3 {
   color: rgb(48, 21, 21);
 }
 
+td{
+  padding-left: 15px;
+  padding-right: 15p
+}
 .f {
   grid-row: 1;
   grid-column: 1 / span 2;
@@ -243,4 +262,32 @@ footer{
   color: rgb(253, 139, 8);
 }
 
+#currentPage{
+  background-color: lightgray;
+  border-top-color:black;
+  border-right-color: black;
+  border-left-color: black;
+  padding-bottom: 35px;
+  border-radius: 10%;
+  padding-top: 10px;
+  text-decoration-color: rgb(253, 139, 8) !important;
+  color: rgb(253, 139, 8) !important;
 
+}
+
+.navlinkboxes{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bannerImage{
+  height: 400px;
+  width: 400px;
+  margin: auto;
+}

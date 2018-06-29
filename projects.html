@@ -14,41 +14,77 @@
 
 <body>
   <header>
-    <h1>Projects</h1>
+    <h1>
+      <a id="homeLink" href="index.html">Timothy Lynch</a>
+    </h1>
   </header>
 
   <nav>
-    <div class="box a"><a href="index.html">Home</a></div>
-    <div class="box b"><a href="projects.html">Projects</a></div>
-    <div class="box c"><a href="education.html">Education</a></div>
-    <div class="box d"><a href="work.html">Work</a></div>
-    <div class="box e"><a href="goals.html">Aspirations</a></div>
+      <div class="aboutNav">
+          <a class="navlinkboxes" href="about.html">About Me</a>
+        </div>
+    <div class="projectsNav">
+      <a class="navlinkboxes" id="currentPage" href="projects.html">Projects</a>
+    </div>
+    <div class="educationNav">
+      <a class="navlinkboxes" href="education.html">Education</a>
+    </div>
+    <div class="workNav">
+      <a class="navlinkboxes" href="work.html">Work</a>
+    </div>
   </nav>
 
   <div class="projectsGrid">
     <h2 class="project-title">Markdown Preview</h2>
-    <p class="project-description">The Markdown Preview web app simply converts a user string into markdown text. Markdown text is a shorthand way of defining certain html contents. If the user types in '# testing', it will display 'testing' using the h1 stylings</p>
-    <a href="markdown.html"><img class="projectImage" src="images/MarkdownScreenshot.JPG" title="Markdown Preview Screenshot"></a>
+    <p class="project-description">The Markdown Preview web app simply converts a user string into markdown text. Markdown text is a shorthand way of defining
+      certain html contents. If the user types in '# testing', it will display 'testing' using the h1 stylings</p>
+    <a href="markdown.html">
+      <img class="projectImage" src="images/MarkdownScreenshot.JPG" title="Markdown Preview Screenshot">
+    </a>
   </div>
 
   <hr>
 
   <div class="projectsGrid">
     <h2 class="project-title">Pick a Number</h2>
-    <p class="project-description">The Pick a Number web app will ask you to guess a number from 1-100. Then you will tell the computer if your number is higher or lower. Eventually the computer will guess your number!</p>
-    <a href="guess.html"><img class="projectImage" src="images/guess.jpg" title="Pick a Number Screenshot"></a>
+    <p class="project-description">The Pick a Number web app will ask you to guess a number from 1-100. Then you will tell the computer if your number is
+      higher or lower. Eventually the computer will guess your number!</p>
+    <a href="guess.html">
+      <img class="projectImage" src="images/guess.jpg" title="Pick a Number Screenshot">
+    </a>
   </div>
 
   <hr>
   <div class="projectsGrid">
-      <h2 class="project-title">Guess my Number</h2>
-      <p class="project-description">Its the opposite of 'Pick a Number'. In this web app, you will try to guess the computer's number between 1-100. How quickly can you guess the computers number?!</p>
-      <a href="numberFinder.html"><img class="projectImage" src="images/findnumberscreenshot.JPG" title="Find A Number Screenshot"></a>
-    </div>
+    <h2 class="project-title">Guess my Number</h2>
+    <p class="project-description">Its the opposite of 'Pick a Number'. In this web app, you will try to guess the computer's number between 1-100. How
+      quickly can you guess the computers number?!</p>
+    <a href="numberFinder.html">
+      <img class="projectImage" src="images/findnumberscreenshot.JPG" title="Find A Number Screenshot">
+    </a>
+  </div>
   <hr>
 
   <footer>
-    
+    <table>
+      <tr>
+        <td>
+          <a href="https://github.com/Loreander">
+            <img src="images/githubLogo.jpg" title="https://github.com/Loreander" class="logo">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/tlynchvt">
+            <img src="images/linkedinLogo.jpg" title="LinkedIn Profile Page" class="logo">
+          </a>
+        </td>
+        <td>
+          <a href="mailto:tlynch.vt@gmail.com">
+            <img src="images/gmailLogo.png" title="tlynch.vt@gmail.com" class="logo">
+          </a>
+        </td>
+      </tr>
+    </table>
   </footer>
 </body>
 
