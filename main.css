@@ -286,8 +286,29 @@ a {
   padding-right: 15px;
 }
 
-.bannerImage{
-  height: 400px;
-  width: 400px;
-  margin: auto;
+.imageGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#leftImage {
+  grid-column: 1;
+  height: 30em;
+  width: 30em;
+  transform: rotate(90deg)
+}
+
+#centerImage {
+  grid-column: 2;
+  height: 30em;
+  width: 30em;
+  transform: rotate(180deg);
+}
+
+#rightImage {
+  grid-column: 3;
+  height: 30em;
+  width: 30em;
+  transform: rotate(90deg);
 }
