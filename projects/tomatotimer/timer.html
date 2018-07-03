@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato Timer</title>
+    <link rel="stylesheet" href="timer.css" type="text/css">
+</head>
+
+<body>
+
+
+    <div class="timer">
+        <p id="leftColon">:</p>
+        <p id="rightColon">:</p>
+        <a href="#" id="leftUp" onclick="incrementHours()"><img src="arrow-up.png"></a>
+        <a href="#" id="middleUp" onclick="incrementMinutes()"><img src="arrow-up.png"></a>
+        <a href="#" id="rightUp" onclick="incrementSeconds()"><img src="arrow-up.png"></a>
+        <a href="#" id="leftDown" onclick="decrementHours()"><img src="arrow-down.png"></a>
+        <a href="#" id="middleDown" onclick="decrementMinutes()"><img src="arrow-down.png"></a>
+        <a href="#" id="rightDown" onclick="decrementSeconds()"><img src="arrow-down.png"></a>
+
+        <form id="secondsSpot">
+            <input id="seconds" type="text" placeholder="00">
+        </form>
+        <form id="minutesSpot">
+            <input id="minutes" type="text" placeholder="00">
+        </form>
+        <form id="hoursSpot">
+            <input id="hours" type="text" placeholder="00">
+        </form>
+
+        <button id="start" onclick="start()">Start</button>
+        <button id="stop" onclick="stop()">Stop</button>
+        <button id="restart" onclick="restart()">Clear</button>
+    </div>
+
+    <script>
+
+    let onFlag;
+    const tickDelay = 1000;
+    var audio = new Audio("timerAudio.mp3")
+    
+    function seconds(){
+        return Number(document.getElementById("seconds").getAttribute("placeholder"));
+    }
+
+    function incrementSeconds(){
+        if(seconds()==59){
+            incrementMinutes()
+            document.getElementById("seconds").setAttribute("placeholder",'00')       
+        }
+
+        else {
+            let seconds = Number(document.getElementById("seconds").getAttribute("placeholder"));
+            seconds += 1;
+            if(seconds < 10){
+                seconds = '0'+seconds.toString()
+        }
+        document.getElementById("seconds").setAttribute("placeholder", seconds);}
+    }
+
+    function decrementSeconds() {
+        if(Number(document.getElementById("seconds").getAttribute("placeholder"))==0){
+            document.getElementById("seconds").setAttribute("placeholder",59)
+        }
+        else {let seconds = document.getElementById("seconds").getAttribute("placeholder");
+            seconds = Number(seconds);
+            console.log(seconds);
+            seconds -= 1;
+            if(seconds < 10){
+                seconds = '0'+seconds.toString()
+        }
+
+        document.getElementById("seconds").setAttribute("placeholder", seconds);}
+
+        if(Number(document.getElementById("seconds").getAttribute("placeholder"))==0 && Number(document.getElementById("hours").getAttribute("placeholder"))==0 && Number(document.getElementById("minutes").getAttribute("placeholder"))==0){
+            audio.play();
+        }
+    }
+
+    function incrementMinutes(){
+        if(Number(document.getElementById("minutes").getAttribute("placeholder"))==59){
+            incrementHours()
+            document.getElementById("minutes").setAttribute("placeholder",00)       
+        }
+        else {
+        let minutes = document.getElementById("minutes").getAttribute("placeholder");
+        minutes = Number(minutes);
+        console.log(minutes);
+        minutes += 1;
+        if(minutes < 10){
+            minutes = '0'+minutes.toString()
+            console.log(minutes)
+        }
+        document.getElementById("minutes").setAttribute("placeholder", minutes);}
+    }
+
+    function decrementMinutes() {
+        if(Number(document.getElementById("minutes").getAttribute("placeholder"))==0){
+            document.getElementById("minutes").setAttribute("placeholder",59)
+        }
+        else {let minutes = document.getElementById("minutes").getAttribute("placeholder");
+        minutes = Number(minutes);
+        console.log(minutes);
+        minutes -= 1;
+        if(minutes < 10){
+            minutes = '0'+minutes.toString()
+            console.log(minutes)
+        }
+        document.getElementById("minutes").setAttribute("placeholder", minutes);}
+    }
+
+    function incrementHours(){
+        if(Number(document.getElementById("hours").getAttribute("placeholder"))==12){
+            alert("We aren't going to set a 13 hour timer.....")
+        }
+        else {let hours = document.getElementById("hours").getAttribute("placeholder");
+        hours = Number(hours);
+        console.log(hours);
+        hours += 1;
+        if(hours < 10){
+            hours = '0'+hours.toString()
+        }
+        document.getElementById("hours").setAttribute("placeholder", hours);}
+    }
+
+    function decrementHours() {
+        if(Number(document.getElementById("hours").getAttribute("placeholder"))==0){
+            document.getElementById("hours").setAttribute("placeholder",12)
+        }
+        else {let hours = document.getElementById("hours").getAttribute("placeholder");
+        hours = Number(hours);
+        console.log(hours);
+        hours -= 1;
+        if(hours < 10){
+            hours = '0'+hours.toString()
+        }
+        document.getElementById("hours").setAttribute("placeholder", hours);}
+    }
+
+    function tickDown(){
+        if(Number(document.getElementById("seconds").getAttribute("placeholder"))==0 && Number(document.getElementById("minutes").getAttribute("placeholder"))==0 && Number(document.getElementById("hours").getAttribute("placeholder"))==0){
+            stop();
+        }
+
+        else if(Number(document.getElementById("seconds").getAttribute("placeholder"))==0 && Number(document.getElementById("minutes").getAttribute("placeholder"))==0 && Number(document.getElementById("hours").getAttribute("placeholder"))>0){
+            borrowHour();
+        }
+
+        else if(Number(document.getElementById("seconds").getAttribute("placeholder"))==0){
+            document.getElementById("seconds").getAttribute("placeholder")=='0'
+            borrowMinute();
+        }
+
+        else if(document.getElementById("seconds").getAttribute("placeholder")>0 && onFlag == true){
+            decrementSeconds();
+            setTimeout(tickDown, tickDelay);
+        }
+
+
+    }
+
+
+    function start(){
+        onFlag = true;
+        setTimeout(tickDown, tickDelay);
+    }
+
+    function stop(){
+        onFlag = false;
+    }
+    
+    function restart(){
+        document.getElementById("seconds").setAttribute("placeholder", '00');
+        document.getElementById("minutes").setAttribute("placeholder", '00');
+        document.getElementById("hours").setAttribute("placeholder", '00');
+        stop();
+    }
+    
+    function borrowMinute(){
+        decrementMinutes();
+        document.getElementById("seconds").setAttribute("placeholder", '59');
+        setTimeout(tickDown, 1000);
+    }
+
+    function borrowHour(){
+        decrementHours();
+        document.getElementById("seconds").setAttribute("placeholder", '59');      
+        document.getElementById("minutes").setAttribute("placeholder", '59');
+        setTimeout(tickDown, 1000);
+    }
+    </script>
+
+</body>
+</html>
