@@ -48,13 +48,13 @@ button{
 
 #stop {
     grid-row: 5;
-    grid-column: 5;
+    grid-column: 3;
     font-size: 20px;
 }
 
-#restart {
+#reset {
     grid-row: 5;
-    grid-column: 3;
+    grid-column: 5;
     font-size: 20px;
 }
 
@@ -171,3 +171,16 @@ img {
     grid-column: 5;
     margin: auto;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: black;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: black;
+  }

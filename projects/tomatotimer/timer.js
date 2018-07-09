@@ -1,6 +1,8 @@
 let onFlag;
 const tickDelay = 1000;
 var audio = new Audio("timerAudio.mp3")
+document.getElementById('start').disabled=false;
+document.getElementById('stop').disabled=true;
 
 
 function incrementSeconds(){
@@ -126,18 +128,25 @@ function tickDown(){
 
 function start(){
     onFlag = true;
+    document.getElementById('start').disabled=true;
+    document.getElementById('stop').disabled=false;
+        document.getElementById('reset').disabled=false;
     setTimeout(tickDown, tickDelay);
 }
 
 function stop(){
+    document.getElementById('start').disabled=false;
+    document.getElementById('stop').disabled=true;
+    document.getElementById('reset').disabled=false;
     onFlag = false;
 }
 
-function restart(){
+function reset(){
     setSeconds('00');
     setMinutes('00');
     setHours('00');
     stop();
+    document.getElementById('reset').disabled=true;
 }
 
 function borrowMinute(){
@@ -154,26 +163,27 @@ function borrowHour(){
 }
 
 function currentSeconds(){
-    let seconds = Number(document.getElementById("seconds").getAttribute("placeholder"))
+    let seconds = Number(document.getElementById("seconds").value)
     return seconds;
 }
 
 function currentMinutes() {
-    return Number(document.getElementById("minutes").getAttribute("placeholder"));
+    return Number(document.getElementById("minutes").value);
 }
 
 function currentHours() {
-    return Number(document.getElementById("hours").getAttribute("placeholder"));
+    return Number(document.getElementById("hours").value);
 }
 
 function setSeconds(setValue){
-    document.getElementById("seconds").setAttribute("placeholder", setValue)
+    document.getElementById("seconds").value= setValue
 }
 
 function setMinutes(setValue){
-    document.getElementById("minutes").setAttribute("placeholder", setValue)
+    document.getElementById("minutes").value= setValue
 }
 
 function setHours(setValue){
-    document.getElementById("hours").setAttribute("placeholder", setValue)
+    document.getElementById("hours").value= setValue
 }
+

@@ -21,20 +21,20 @@
         <p id="hoursText">Hours</p>
 
         <form id="secondsSpot">
-            <input id="seconds" type="text" placeholder="00">
+            <input id="seconds" type="text" placeholder="00" onfocus='this.placeholder=""' onblur="this.placeholder='00'">
         </form>
 
         <form id="minutesSpot">
-            <input id="minutes" type="text" placeholder="00">
+            <input id="minutes" type="text" placeholder="00" onfocus='this.placeholder=""' onblur="this.placeholder='00'">
         </form>
 
         <form id="hoursSpot">
-            <input id="hours" type="text" placeholder="00">
+            <input id="hours" type="text" placeholder="00" onfocus='this.placeholder=""' onblur="this.placeholder='00'">
         </form>
 
         <button id="start" onclick="start()">Start</button>
         <button id="stop" onclick="stop()">Stop</button>
-        <button id="restart" onclick="restart()">Clear</button>
+        <button id="reset" onclick="reset()">Reset</button>
         
     </div>
 
