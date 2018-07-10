@@ -130,6 +130,7 @@ nav{
 
 .aboutNav {
   grid-column: 1;
+  min-width: 103px;
 }
 
 .e:hover{
@@ -169,6 +170,7 @@ h1 {
 
 #homeLink{
   color: rgb(253, 139, 8);
+  min-width: 330px;
 }
 
 h2 {
@@ -276,6 +278,8 @@ footer{
   height: 50px;
   width: 50px;
   color: rgb(253, 139, 8);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #currentPage{
@@ -294,15 +298,10 @@ footer{
 
 }
 
-.navlinkboxes{
-  padding-left: 2em;
-  padding-right: 2em;
-}
+
 
 a {
   text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .imageGrid {
